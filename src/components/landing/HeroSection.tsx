@@ -42,7 +42,7 @@ export function Hero() {
           alt="Mockup principal do Atlas Visual de Parasitas do Rebanho — capa do material"
           width={1024}
           height={1024}
-          className="mt-9 w-full max-w-md"
+          className="mt-9 w-full max-w-md pulse-glow"
           loading="eager"
           decoding="async"
         />
