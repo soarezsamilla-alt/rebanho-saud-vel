@@ -131,7 +131,7 @@ export function SecondaryCarousel() {
             <img
               src={image.url}
               alt={image.alt}
-              loading="lazy"
+              loading="eager"
               decoding="async"
               className="h-[240px] w-auto rounded-lg object-contain sm:h-[300px] md:h-[360px]"
             />
