@@ -1,16 +1,33 @@
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
+import a01 from "@/assets/amostras/amostra-01.jpg.asset.json";
+import a02 from "@/assets/amostras/amostra-02.jpg.asset.json";
+import a03 from "@/assets/amostras/amostra-03.jpg.asset.json";
+import a04 from "@/assets/amostras/amostra-04.jpg.asset.json";
+import a05 from "@/assets/amostras/amostra-05.jpg.asset.json";
+import a06 from "@/assets/amostras/amostra-06.jpg.asset.json";
+import a07 from "@/assets/amostras/amostra-07.jpg.asset.json";
+import a08 from "@/assets/amostras/amostra-08.jpg.asset.json";
+import a09 from "@/assets/amostras/amostra-09.jpg.asset.json";
+import a10 from "@/assets/amostras/amostra-10.jpg.asset.json";
+import a11 from "@/assets/amostras/amostra-11.jpg.asset.json";
+import a12 from "@/assets/amostras/amostra-12.jpg.asset.json";
 
-const GALLERY_IMAGES = [
-  "exemplo-carrapato",
-  "exemplo-verminose",
-  "exemplo-mosca-dos-chifres",
-  "exemplo-berne",
-  "exemplo-bicheira",
-  "exemplo-sarna",
-  "exemplo-piolho",
-  "exemplo-carrapato-2",
-] as const;
+const GALLERY_IMAGES: ReadonlyArray<{ url: string; alt: string }> = [
+  { url: a01.url, alt: "Amostra 1 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a02.url, alt: "Amostra 2 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a03.url, alt: "Amostra 3 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a04.url, alt: "Amostra 4 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a05.url, alt: "Amostra 5 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a06.url, alt: "Amostra 6 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a07.url, alt: "Amostra 7 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a08.url, alt: "Amostra 8 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a09.url, alt: "Amostra 9 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a10.url, alt: "Amostra 10 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a11.url, alt: "Amostra 11 do Atlas Visual de Parasitas do Rebanho" },
+  { url: a12.url, alt: "Amostra 12 do Atlas Visual de Parasitas do Rebanho" },
+];
+
 
 const PARASITES: ReadonlyArray<{ name: string; detail: string }> = [
   { name: "Carrapato", detail: "Sinais de infestação e época de maior risco no seu estado." },
