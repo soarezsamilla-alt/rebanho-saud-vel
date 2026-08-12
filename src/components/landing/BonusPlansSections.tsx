@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Check, Gift, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
+import bonusCalendarioMockup from "@/assets/bonus-calendario-vermifugacao.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { UpsellModal } from "./UpsellModal";
@@ -85,7 +86,18 @@ export function BonusSection() {
               🎁 {bonus.index}
             </p>
             <h3 className="mt-1 text-lg font-bold text-primary">{bonus.title}</h3>
-            <ImagePlaceholder label={bonus.image} ratio="aspect-[4/3]" className="mt-4" />
+            {bonus.image === "bonus-calendario-vermifugacao" ? (
+              <img
+                src={bonusCalendarioMockup.url}
+                alt={bonus.title}
+                width={400}
+                height={300}
+                loading="lazy"
+                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+              />
+            ) : (
+              <ImagePlaceholder label={bonus.image} ratio="aspect-[4/3]" className="mt-4" />
+            )}
             <p className="mt-4 flex-1 text-sm text-muted-foreground">{bonus.description}</p>
             <p className="mt-4 font-display text-base font-bold">
               <span className="text-muted-foreground line-through">{bonus.value}</span>{" "}
