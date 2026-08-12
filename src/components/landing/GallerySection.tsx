@@ -98,8 +98,8 @@ export function GallerySection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-left-4" />
-        <CarouselNext className="right-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-right-4" />
+        <CarouselPrevious className="glow-arrow left-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-left-4" />
+        <CarouselNext className="glow-arrow right-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-right-4" />
       </Carousel>
 
       <p className="mt-12 text-center font-display text-lg font-semibold text-balance sm:text-xl">
