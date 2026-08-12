@@ -1,6 +1,12 @@
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
+import painVerminose from "@/assets/pain/verminose.jpg";
+import painCarrapato from "@/assets/pain/carrapato.jpg";
+import painMosca from "@/assets/pain/mosca.jpg";
+import painBerne from "@/assets/pain/berne.jpg";
+import painBicheira from "@/assets/pain/bicheira.jpg";
+import painSarna from "@/assets/pain/sarna.jpg";
+import painPiolho from "@/assets/pain/piolho.jpg";
 
 interface FeatureCard {
   icon: string;
