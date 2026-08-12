@@ -16,6 +16,7 @@ import {
   FaqSection,
   SiteFooter,
 } from "@/components/landing/ProofSections";
+import { SocialProofPopup } from "@/components/landing/SocialProofPopup";
 
 const TITLE = "Atlas Visual de Parasitas do Rebanho | Método IVR™";
 const DESCRIPTION =
@@ -53,6 +54,7 @@ function Index() {
       <StepsSection />
       <FaqSection />
       <SiteFooter />
+      <SocialProofPopup />
     </main>
   );
 }
