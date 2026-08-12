@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Check, Gift, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
+import { UpsellModal } from "./UpsellModal";
+
 
 interface Bonus {
   index: string;
