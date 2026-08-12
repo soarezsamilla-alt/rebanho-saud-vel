@@ -1,4 +1,4 @@
-import { Check, Zap } from "lucide-react";
+import { Check, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
@@ -181,7 +181,8 @@ export function PlansSection() {
               Quero acessar agora →
             </CtaButton>
           </div>
-          <p className="mt-2 text-center text-[11px] tracking-wide text-muted-foreground uppercase">
+          <p className="mt-4 flex items-center justify-center gap-2 text-center text-sm font-semibold text-primary">
+            <ShieldCheck className="h-4 w-4" />
             7 dias de garantia incondicional
           </p>
         </article>
