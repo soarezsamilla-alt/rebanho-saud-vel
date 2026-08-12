@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
@@ -145,7 +145,8 @@ export function PlansSection() {
 
         <article className="relative rounded-3xl border-2 border-primary bg-card p-7 shadow-plan-hero">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-urgency px-4 py-1.5 text-center font-display text-[11px] font-bold tracking-[0.12em] text-urgency-foreground uppercase sm:text-xs">
-            MAIS VENDIDO
+            <Zap className="inline-block size-3.5 align-text-bottom" aria-hidden="true" />
+            <span className="ml-1">MAIS VENDIDO</span>
           </div>
 
           <h3 className="mt-3 text-center font-display text-2xl font-bold tracking-wide uppercase">
