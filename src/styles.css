@@ -248,11 +248,6 @@
   animation: marquee 40s linear infinite;
 }
 
-@utility pause-on-hover {
-  &:hover {
-    animation-play-state: paused;
-  }
-}
 
 
 
