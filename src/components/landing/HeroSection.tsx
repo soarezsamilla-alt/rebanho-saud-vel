@@ -23,14 +23,10 @@ export function TopBar() {
 
   return (
     <div className="sticky top-0 z-50 bg-urgency text-urgency-foreground">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-1 px-4 py-2 text-center sm:flex-row sm:text-left">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-1 px-4 py-2 text-center sm:flex-row sm:text-left">
         <p className="flex items-center gap-2 font-display text-sm font-bold tracking-[0.12em] uppercase sm:text-base">
           <Clock className="size-4 shrink-0" aria-hidden="true" />
           Última chance — oferta termina em {offerDate || "breve"}
-        </p>
-        <p className="flex items-center gap-2 text-[11px] font-semibold tracking-[0.1em] uppercase opacity-90 sm:text-xs">
-          <ShieldCheck className="size-4 shrink-0" aria-hidden="true" />
-          Compra 100% segura e protegida
         </p>
       </div>
     </div>
