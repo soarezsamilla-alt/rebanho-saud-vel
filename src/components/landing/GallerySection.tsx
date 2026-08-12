@@ -122,7 +122,7 @@ export function SecondaryCarousel() {
 
   return (
     <section aria-label="Demonstração do material" className="overflow-hidden bg-sand py-10">
-      <div className="animate-marquee hover:pause flex w-max gap-4">
+      <div className="animate-marquee pause-on-hover flex w-max gap-4">
         {duplicated.map((image, index) => (
           <figure
             key={`${image.url}-${index}`}
