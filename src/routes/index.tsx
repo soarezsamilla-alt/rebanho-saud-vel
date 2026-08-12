@@ -54,6 +54,7 @@ function Index() {
       <StepsSection />
       <FaqSection />
       <SiteFooter />
+      <SocialProofPopup />
     </main>
   );
 }
