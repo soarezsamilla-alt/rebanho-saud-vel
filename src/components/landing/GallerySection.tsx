@@ -82,7 +82,7 @@ export function GallerySection() {
                 <img
                   src={image.url}
                   alt={image.alt}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="h-[280px] w-auto rounded-lg object-contain sm:h-[360px] md:h-[440px] lg:h-[520px]"
                 />
