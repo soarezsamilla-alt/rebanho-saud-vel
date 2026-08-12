@@ -148,13 +148,13 @@ export function PlansSection() {
             Mais vendido — Última chance — Oferta termina hoje
           </div>
 
-          <h3 className="mt-3 font-display text-2xl font-bold tracking-wide uppercase">
+          <h3 className="mt-3 text-center font-display text-2xl font-bold tracking-wide uppercase">
             Plano Completo
           </h3>
-          <p className="mt-2 font-display text-lg font-semibold text-primary">
+          <p className="mt-2 text-center font-display text-lg font-semibold text-primary">
             Biblioteca Visual Completa de Parasitas do Rebanho
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 text-center text-sm text-muted-foreground">
             A opção mais indicada para quem quer todos os recursos e bônus para reduzir prejuízo o
             ano inteiro.
           </p>
@@ -172,10 +172,10 @@ export function PlansSection() {
 
           <div className="mt-7 rounded-2xl bg-primary p-5 text-center text-primary-foreground">
             <p className="text-sm opacity-85">
-              De <span className="line-through">R$97,90</span> por apenas:
+              De <span className="line-through">R$197,90</span> por apenas:
             </p>
             <p className="font-display text-5xl font-bold">R$27,90</p>
-            <p className="mt-1 text-sm opacity-85">(ou 6x de R$5,15)</p>
+            <p className="mt-1 text-sm opacity-85">(ou 6x de R$4,65)</p>
           </div>
 
           <div className="mt-6 flex justify-center">
