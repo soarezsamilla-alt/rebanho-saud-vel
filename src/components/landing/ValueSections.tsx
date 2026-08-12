@@ -7,6 +7,7 @@ import painBerne from "@/assets/pain/berne.jpg";
 import painBicheira from "@/assets/pain/bicheira.jpg";
 import painSarna from "@/assets/pain/sarna.jpg";
 import painPiolho from "@/assets/pain/piolho.jpg";
+import painMiiase from "@/assets/pain/miiase.jpg";
 
 interface FeatureCard {
   icon: string;
@@ -88,6 +89,7 @@ const PAIN_IMAGES: ReadonlyArray<{ src: string; alt: string }> = [
   { src: painBicheira, alt: "Ferida com bicheira sendo examinada por veterinário" },
   { src: painSarna, alt: "Lesões de sarna com perda de pelo no bovino" },
   { src: painPiolho, alt: "Piolhos bovinos entre os pelos do animal" },
+  { src: painMiiase, alt: "Miiase ocular em bovino sendo examinada por veterinário" },
 ];
 
 const DELIVERABLES = [
@@ -149,7 +151,7 @@ export function PainSection() {
         para identificar o parasita certo antes que o prejuízo cresça.
       </p>
 
-      <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
+      <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-4">
         {PAIN_IMAGES.map((image) => (
           <figure
             key={image.src}
