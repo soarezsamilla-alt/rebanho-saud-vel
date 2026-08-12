@@ -54,7 +54,7 @@ export function SocialProofPopup() {
 
   if (!mounted) return null;
 
-  const current = SOCIAL_PROOFS[index];
+  const current = SOCIAL_PROOFS[index] ?? SOCIAL_PROOFS[0];
 
   return (
     <div
