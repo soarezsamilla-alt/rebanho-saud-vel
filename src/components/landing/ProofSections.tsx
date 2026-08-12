@@ -5,7 +5,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import guaranteeSeal from "@/assets/selo-garantia.png.asset.json";
+
 
 const TESTIMONIALS = [
   {
@@ -113,10 +114,14 @@ export function GuaranteeSection() {
   return (
     <Section className="bg-earth-gradient text-earth-foreground">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-        <ImagePlaceholder
-          label="selo-garantia-7-dias"
-          ratio="aspect-square"
-          className="w-40 rounded-full border-earth-foreground/30 bg-earth-foreground/10 text-earth-foreground"
+        <img
+          src={guaranteeSeal.url}
+          alt="Selo de 7 dias de garantia incondicional"
+          width={320}
+          height={320}
+          loading="lazy"
+          decoding="async"
+          className="pulse-glow w-40 rounded-full"
         />
         <SectionTitle className="mt-6">7 dias de garantia incondicional</SectionTitle>
         <p className="mt-5 text-base text-pretty opacity-90 sm:text-lg">
