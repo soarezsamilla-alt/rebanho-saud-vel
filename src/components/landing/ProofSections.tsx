@@ -96,22 +96,41 @@ export function TestimonialsSection() {
         Depoimentos de uso prático no dia a dia da fazenda.
       </p>
 
-      <div className="mt-10 grid gap-6 lg:grid-cols-3">
-        {TESTIMONIALS.map((item) => (
-          <figure
-            key={item.author}
-            className="rounded-2xl border border-border bg-card p-6 shadow-card-soft"
-          >
-            <p className="text-lg tracking-widest text-gold" aria-label="5 de 5 estrelas">
-              ★★★★★
-            </p>
-            <blockquote className="mt-3 text-base text-pretty italic">“{item.quote}”</blockquote>
-            <figcaption className="mt-4 font-display text-sm font-bold tracking-wide uppercase">
-              — {item.author}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
+      <Carousel
+        opts={{
+          align: "center",
+          loop: true,
+          skipSnaps: false,
+          dragFree: false,
+          duration: 40,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 3500,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
+        className="mt-10 w-full max-w-5xl mx-auto"
+      >
+        <CarouselContent className="-ml-4">
+          {TESTIMONIALS.map((image) => (
+            <CarouselItem key={image.url} className="basis-auto pl-4">
+              <figure className="mx-auto rounded-xl border border-border bg-card p-3 shadow-card-soft">
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  loading="eager"
+                  decoding="async"
+                  className="h-[520px] w-auto rounded-lg object-contain sm:h-[640px] md:h-[720px]"
+                />
+              </figure>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="glow-arrow left-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-left-4" />
+        <CarouselNext className="glow-arrow right-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-right-4" />
+      </Carousel>
 
       <div className="mt-10 flex justify-center">
         <CtaButton>Quero meu acesso agora →</CtaButton>
