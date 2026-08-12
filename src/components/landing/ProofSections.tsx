@@ -118,7 +118,7 @@ export function GuaranteeSection() {
           ratio="aspect-square"
           className="w-40 rounded-full border-earth-foreground/30 bg-earth-foreground/10 text-earth-foreground"
         />
-        <SectionTitle className="mt-6">Garantia Blindada de 7 Dias</SectionTitle>
+        <SectionTitle className="mt-6">7 dias de garantia incondicional</SectionTitle>
         <p className="mt-5 text-base text-pretty opacity-90 sm:text-lg">
           Você tem 7 dias para analisar todo o material. Explore os parasitas identificados,
           consulte os sinais ilustrados e utilize o Método IVR™.
