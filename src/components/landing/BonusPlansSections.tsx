@@ -1,5 +1,6 @@
 import { Check, Gift, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
+import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
@@ -131,6 +132,15 @@ export function PlansSection() {
           <p className="mt-2 text-sm text-muted-foreground">
             Para quem deseja começar a identificar os parasitas de forma prática e organizada.
           </p>
+
+          <img
+            src={basicMockup.url}
+            alt="Mockup do Plano Básico"
+            width={700}
+            height={700}
+            loading="lazy"
+            className="pulse-glow mx-auto mt-5 w-full max-w-sm rounded-2xl"
+          />
 
           <FeatureList items={BASIC_FEATURES} />
 
