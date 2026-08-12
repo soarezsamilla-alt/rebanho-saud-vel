@@ -68,8 +68,16 @@ export function GallerySection() {
           align: "start",
           loop: true,
           skipSnaps: false,
-          dragFree: true,
+          dragFree: false,
+          duration: 40,
         }}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
         className="mt-10 w-full"
       >
         <CarouselContent className="-ml-4">
