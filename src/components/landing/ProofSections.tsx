@@ -5,23 +5,33 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import guaranteeSeal from "@/assets/selo-garantia.png.asset.json";
+import depoimento01 from "@/assets/depoimento-01.png.asset.json";
+import depoimento02 from "@/assets/depoimento-02.png.asset.json";
+import depoimento03 from "@/assets/depoimento-03.png.asset.json";
 
-
-const TESTIMONIALS = [
+const TESTIMONIALS: ReadonlyArray<{ url: string; alt: string }> = [
   {
-    quote: "Hoje consigo identificar o problema muito mais rápido, direto no curral.",
-    author: "João Marcos, Pecuarista",
+    url: depoimento01.url,
+    alt: "Depoimento 1 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    quote: "Finalmente organizei a identificação de parasitas em um único lugar.",
-    author: "Ricardo Almeida, Produtor de Leite",
+    url: depoimento02.url,
+    alt: "Depoimento 2 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    quote: "Material extremamente prático para o dia a dia da fazenda.",
-    author: "Fernanda Costa, Técnica Agropecuária",
+    url: depoimento03.url,
+    alt: "Depoimento 3 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
-] as const;
+];
 
 const STEPS: ReadonlyArray<{ title: string; description?: string; items?: string[] }> = [
   { title: "Faça sua compra", description: "Pagamento rápido e seguro." },
