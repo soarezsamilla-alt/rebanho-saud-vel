@@ -106,7 +106,9 @@ export function UpsellModal({ open, onClose }: { open: boolean; onClose: () => v
 
           <div className="mt-6 flex flex-col gap-3">
             <CtaButton
-              href="#checkout-plano-completo"
+              href="https://pay.wiapy.com/dsLjibDs63pX"
+              target="_blank"
+              rel="noopener noreferrer"
               size="lg"
               className="bg-urgency text-urgency-foreground"
               onClick={onClose}
