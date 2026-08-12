@@ -246,7 +246,7 @@ export function PlansSection() {
           </div>
 
           <div className="mt-6 flex justify-center">
-            <CtaButton href="#checkout-plano-completo" size="lg">
+            <CtaButton href="https://pay.wiapy.com/_vX2vzk_XsRQ" size="lg" target="_blank" rel="noopener noreferrer">
               Quero acessar agora →
             </CtaButton>
           </div>
