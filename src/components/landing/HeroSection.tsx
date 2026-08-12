@@ -54,7 +54,7 @@ export function Hero() {
         </p>
 
         <div className="mt-8 flex w-full justify-center">
-          <CtaButton size="lg">Quero acessar agora →</CtaButton>
+          <CtaButton size="lg">QUERO MEU PROJETO POR R$ 9,90</CtaButton>
         </div>
 
         <p className="mt-4 max-w-xl text-xs opacity-80 sm:text-sm">
