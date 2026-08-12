@@ -182,7 +182,7 @@ export function PlansSection() {
             </CtaButton>
           </div>
           <p className="mt-2 text-center text-[11px] tracking-wide text-muted-foreground uppercase">
-            [Link de checkout — plano completo]
+            7 dias de garantia incondicional
           </p>
         </article>
       </div>
