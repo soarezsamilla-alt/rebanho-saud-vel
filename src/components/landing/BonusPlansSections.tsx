@@ -145,7 +145,7 @@ export function PlansSection() {
 
         <article className="relative rounded-3xl border-2 border-primary bg-card p-7 shadow-plan-hero">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-urgency px-4 py-1.5 text-center font-display text-[11px] font-bold tracking-[0.12em] text-urgency-foreground uppercase sm:text-xs">
-            Mais vendido — Última chance — Oferta termina hoje
+            MAIS VENDIDO
           </div>
 
           <h3 className="mt-3 text-center font-display text-2xl font-bold tracking-wide uppercase">
