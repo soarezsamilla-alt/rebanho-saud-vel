@@ -208,6 +208,11 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
+@utility glow-arrow {
+  box-shadow: 0 0 0 2px var(--color-background), 0 0 18px 4px var(--color-primary);
+  animation: glow-arrow 2.4s ease-in-out infinite;
+}
+
 @keyframes pulse-glow {
   0%,
   100% {
@@ -217,6 +222,16 @@
   50% {
     filter: drop-shadow(0 0 24px oklch(0.98 0.01 95 / 0.18)) drop-shadow(0 28px 56px oklch(0.16 0.03 130 / 0.3));
     transform: scale(1.015);
+  }
+}
+
+@keyframes glow-arrow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 2px var(--color-background), 0 0 14px 2px var(--color-primary);
+  }
+  50% {
+    box-shadow: 0 0 0 2px var(--color-background), 0 0 28px 8px var(--color-primary);
   }
 }
 
