@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import a01 from "@/assets/amostras/amostra-01.jpg.asset.json";
 import a02 from "@/assets/amostras/amostra-02.jpg.asset.json";
 import a03 from "@/assets/amostras/amostra-03.jpg.asset.json";
