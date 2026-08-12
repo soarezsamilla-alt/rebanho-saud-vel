@@ -4,6 +4,7 @@ import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
 import bonusCalendarioMockup from "@/assets/bonus-calendario-vermifugacao.png.asset.json";
 import bonusCarrapatoMockup from "@/assets/bonus-guia-carrapato.png.asset.json";
+import bonusChecklistMockup from "@/assets/bonus-checklist-inspecao.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { UpsellModal } from "./UpsellModal";
@@ -99,6 +100,15 @@ export function BonusSection() {
             ) : bonus.image === "bonus-guia-carrapato" ? (
               <img
                 src={bonusCarrapatoMockup.url}
+                alt={bonus.title}
+                width={400}
+                height={300}
+                loading="lazy"
+                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+              />
+            ) : bonus.image === "bonus-checklist-inspecao" ? (
+              <img
+                src={bonusChecklistMockup.url}
                 alt={bonus.title}
                 width={400}
                 height={300}
