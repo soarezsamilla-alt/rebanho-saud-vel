@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ShieldCheck, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 
