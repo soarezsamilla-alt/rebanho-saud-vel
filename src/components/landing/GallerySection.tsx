@@ -1,5 +1,12 @@
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import a01 from "@/assets/amostras/amostra-01.jpg.asset.json";
 import a02 from "@/assets/amostras/amostra-02.jpg.asset.json";
 import a03 from "@/assets/amostras/amostra-03.jpg.asset.json";
@@ -28,7 +35,6 @@ const GALLERY_IMAGES: ReadonlyArray<{ url: string; alt: string }> = [
   { url: a12.url, alt: "Amostra 12 do Atlas Visual de Parasitas do Rebanho" },
 ];
 
-
 const PARASITES: ReadonlyArray<{ name: string; detail: string }> = [
   { name: "Carrapato", detail: "Sinais de infestação e época de maior risco no seu estado." },
   {
@@ -56,21 +62,36 @@ export function GallerySection() {
     <Section className="bg-background">
       <SectionTitle>Veja alguns dos parasitas que você vai identificar</SectionTitle>
 
-      <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        {GALLERY_IMAGES.map((image) => (
-          <img
-            key={image.url}
-            src={image.url}
-            alt={image.alt}
-            loading="lazy"
-            decoding="async"
-            width={900}
-            height={1272}
-            className="aspect-[3/4] w-full rounded-xl border border-border object-cover shadow-card-soft"
-          />
-        ))}
-      </div>
-
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+          skipSnaps: false,
+          dragFree: true,
+        }}
+        className="mt-10 w-full"
+      >
+        <CarouselContent className="-ml-4">
+          {GALLERY_IMAGES.map((image) => (
+            <CarouselItem
+              key={image.url}
+              className="basis-auto pl-4"
+            >
+              <figure className="rounded-xl border border-border bg-card p-2 shadow-card-soft">
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-[280px] w-auto rounded-lg object-contain sm:h-[360px] md:h-[440px] lg:h-[520px]"
+                />
+              </figure>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-left-4" />
+        <CarouselNext className="right-2 top-1/2 -translate-y-1/2 bg-background/90 backdrop-blur sm:-right-4" />
+      </Carousel>
 
       <p className="mt-12 text-center font-display text-lg font-semibold text-balance sm:text-xl">
         Mais de 100 parasitas organizados para consulta rápida — incluindo:
@@ -94,6 +115,7 @@ export function GallerySection() {
     </Section>
   );
 }
+
 
 export function SecondaryCarousel() {
   return (
