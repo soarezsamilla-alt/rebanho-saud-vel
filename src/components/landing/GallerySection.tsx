@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import a01 from "@/assets/amostras/amostra-01.jpg.asset.json";
 import a02 from "@/assets/amostras/amostra-02.jpg.asset.json";
 import a03 from "@/assets/amostras/amostra-03.jpg.asset.json";
@@ -67,8 +68,16 @@ export function GallerySection() {
           align: "start",
           loop: true,
           skipSnaps: false,
-          dragFree: true,
+          dragFree: false,
+          duration: 40,
         }}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+          }),
+        ]}
         className="mt-10 w-full"
       >
         <CarouselContent className="-ml-4">
