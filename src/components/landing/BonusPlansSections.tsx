@@ -138,9 +138,6 @@ export function PlansSection() {
           <div className="mt-6 flex justify-center">
             <CtaButton href="#checkout-plano-basico">Quero acessar agora →</CtaButton>
           </div>
-          <p className="mt-2 text-center text-[11px] tracking-wide text-muted-foreground uppercase">
-            [Link de checkout — plano básico]
-          </p>
         </article>
 
         <article className="relative rounded-3xl border-2 border-primary bg-card p-7 shadow-plan-hero">
