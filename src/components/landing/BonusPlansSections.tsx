@@ -25,7 +25,7 @@ const BONUSES: ReadonlyArray<Bonus> = [
     title: "Calendário de Vermifugação Estratégica",
     image: "bonus-calendario-vermifugacao",
     description: "Saiba quando tratar, não só como identificar.",
-    value: "Valor: R$27",
+    value: "Valor: R$37",
   },
   {
     index: "Bônus #2",
@@ -33,14 +33,14 @@ const BONUSES: ReadonlyArray<Bonus> = [
     image: "bonus-guia-carrapato",
     description:
       "Protocolo completo contra a principal ameaça sanitária apontada pelos pecuaristas.",
-    value: "Valor: R$27",
+    value: "Valor: R$37",
   },
   {
     index: "Bônus #3",
     title: "Checklist de Inspeção Mensal do Rebanho",
     image: "bonus-checklist-inspecao",
     description: "Rotina simples para pegar o problema antes que ele vire prejuízo grande.",
-    value: "Valor: R$27",
+    value: "Valor: R$37",
   },
   {
     index: "Bônus #4",
