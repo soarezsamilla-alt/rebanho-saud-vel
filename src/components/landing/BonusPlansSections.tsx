@@ -143,7 +143,12 @@ export function PlansSection() {
           </div>
 
           <div className="mt-6 flex justify-center">
-            <CtaButton href="#checkout-plano-basico">Quero acessar agora →</CtaButton>
+            <CtaButton
+              href="#checkout-plano-basico"
+              className="bg-cta-lime text-cta-lime-foreground"
+            >
+              Quero acessar agora →
+            </CtaButton>
           </div>
         </article>
 
