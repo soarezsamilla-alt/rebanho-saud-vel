@@ -96,6 +96,15 @@ export function BonusSection() {
                 loading="lazy"
                 className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
               />
+            ) : bonus.image === "bonus-guia-carrapato" ? (
+              <img
+                src={bonusCarrapatoMockup.url}
+                alt={bonus.title}
+                width={400}
+                height={300}
+                loading="lazy"
+                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+              />
             ) : (
               <ImagePlaceholder label={bonus.image} ratio="aspect-[4/3]" className="mt-4" />
             )}
