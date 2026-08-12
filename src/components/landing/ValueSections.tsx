@@ -1,5 +1,6 @@
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
+import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 
 interface FeatureCard {
   icon: string;
