@@ -57,10 +57,20 @@ export function GallerySection() {
       <SectionTitle>Veja alguns dos parasitas que você vai identificar</SectionTitle>
 
       <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        {GALLERY_IMAGES.map((label) => (
-          <ImagePlaceholder key={label} label={label} ratio="aspect-square" />
+        {GALLERY_IMAGES.map((image) => (
+          <img
+            key={image.url}
+            src={image.url}
+            alt={image.alt}
+            loading="lazy"
+            decoding="async"
+            width={900}
+            height={1272}
+            className="aspect-[3/4] w-full rounded-xl border border-border object-cover shadow-card-soft"
+          />
         ))}
       </div>
+
 
       <p className="mt-12 text-center font-display text-lg font-semibold text-balance sm:text-xl">
         Mais de 100 parasitas organizados para consulta rápida — incluindo:
