@@ -1,6 +1,6 @@
 import { ShieldCheck, Clock } from "lucide-react";
 import { CtaButton } from "./CtaButton";
-import heroMockup from "@/assets/hero-mockup-clean.png";
+import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 
 /** Sticky urgency bar + security seal. */
 export function TopBar() {
@@ -38,10 +38,10 @@ export function Hero() {
         </p>
 
         <img
-          src={heroMockup}
+          src={heroMockup.url}
           alt="Mockup principal do Atlas Visual de Parasitas do Rebanho — capa do material"
-          width={1024}
-          height={1024}
+          width={700}
+          height={700}
           className="mt-9 w-full max-w-lg scale-105 pulse-glow sm:max-w-xl lg:max-w-2xl"
           loading="eager"
           decoding="async"
