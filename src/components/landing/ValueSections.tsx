@@ -176,10 +176,14 @@ export function DeliverablesSection() {
       <SectionTitle>Tudo o que você vai receber</SectionTitle>
 
       <div className="mt-10 grid items-center gap-10 lg:grid-cols-2">
-        <ImagePlaceholder
-          label="Mockup principal do produto — mesma imagem do hero"
-          ratio="aspect-[4/3]"
-          className="bg-card"
+        <img
+          src={heroMockup.url}
+          alt="Mockup principal do Atlas Visual de Parasitas do Rebanho — tudo o que você vai receber"
+          width={700}
+          height={700}
+          className="mx-auto w-full max-w-md scale-105 pulse-glow"
+          loading="lazy"
+          decoding="async"
         />
 
         <div>
