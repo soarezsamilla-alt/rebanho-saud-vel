@@ -119,6 +119,8 @@ function FeatureList({ items }: { items: ReadonlyArray<string> }) {
 }
 
 export function PlansSection() {
+  const [upsellOpen, setUpsellOpen] = useState(false);
+
   return (
     <Section id="planos" className="scroll-mt-16 bg-secondary/60">
       <p className="text-center font-display text-lg font-bold tracking-[0.15em] text-urgency uppercase">
@@ -157,7 +159,7 @@ export function PlansSection() {
 
           <div className="mt-6 flex justify-center">
             <CtaButton
-              href="#checkout-plano-basico"
+              onClick={() => setUpsellOpen(true)}
               className="bg-cta-lime text-cta-lime-foreground"
             >
               Quero acessar agora →
@@ -212,6 +214,8 @@ export function PlansSection() {
           </p>
         </article>
       </div>
+
+      <UpsellModal open={upsellOpen} onClose={() => setUpsellOpen(false)} />
 
       <p className="mx-auto mt-10 max-w-3xl text-center text-base text-pretty text-muted-foreground sm:text-lg">
         Um único parasita identificado a tempo pode economizar quilos de peso e litros de leite no
