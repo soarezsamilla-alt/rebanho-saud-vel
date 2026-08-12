@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Clock } from "lucide-react";
+import { Clock, ShieldCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
+
 
 function getTomorrowDate(): string {
   const tomorrow = new Date();
@@ -37,8 +38,9 @@ export function Hero() {
   return (
     <header className="bg-hero-gradient px-4 py-14 text-primary-foreground sm:py-20">
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center text-center">
-        <span className="rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-1.5 font-display text-xs font-semibold tracking-[0.35em] uppercase">
-          — Pecuária —
+        <span className="shield-pulse inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-1.5 font-display text-xs font-semibold tracking-[0.2em] uppercase">
+          <ShieldCheck className="size-4 shrink-0" aria-hidden="true" />
+          Compra 100% protegida
         </span>
 
         <h1 className="mt-6 text-4xl leading-[1.05] font-bold text-balance uppercase sm:text-5xl lg:text-6xl">
