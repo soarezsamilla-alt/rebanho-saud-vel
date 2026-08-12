@@ -17,6 +17,9 @@ import guaranteeSeal from "@/assets/selo-garantia.png.asset.json";
 import depoimento01 from "@/assets/depoimento-01.png.asset.json";
 import depoimento02 from "@/assets/depoimento-02.png.asset.json";
 import depoimento03 from "@/assets/depoimento-03.png.asset.json";
+import depoimento04 from "@/assets/depoimento-04.png.asset.json";
+import depoimento05 from "@/assets/depoimento-05.png.asset.json";
+import depoimento06 from "@/assets/depoimento-06.png.asset.json";
 
 const TESTIMONIALS: ReadonlyArray<{ url: string; alt: string }> = [
   {
@@ -30,6 +33,18 @@ const TESTIMONIALS: ReadonlyArray<{ url: string; alt: string }> = [
   {
     url: depoimento03.url,
     alt: "Depoimento 3 de cliente do Atlas Visual de Parasitas do Rebanho",
+  },
+  {
+    url: depoimento04.url,
+    alt: "Depoimento 4 de cliente do Atlas Visual de Parasitas do Rebanho",
+  },
+  {
+    url: depoimento05.url,
+    alt: "Depoimento 5 de cliente do Atlas Visual de Parasitas do Rebanho",
+  },
+  {
+    url: depoimento06.url,
+    alt: "Depoimento 6 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
 ];
 
