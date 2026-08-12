@@ -131,8 +131,8 @@ export function PlansSection() {
             <p className="text-sm text-muted-foreground">
               De <span className="line-through">R$47,90</span> por apenas:
             </p>
-            <p className="font-display text-5xl font-bold text-primary">R$17,90</p>
-            <p className="mt-1 text-sm text-muted-foreground">(ou 3x de R$6,33)</p>
+            <p className="font-display text-5xl font-bold text-primary">R$9,90</p>
+            <p className="mt-1 text-sm text-muted-foreground">(ou 3x de R$3,50)</p>
           </div>
 
           <div className="mt-6 flex justify-center">
