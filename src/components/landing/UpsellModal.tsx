@@ -57,7 +57,7 @@ export function UpsellModal({ open, onClose }: { open: boolean; onClose: () => v
         <div className="bg-urgency px-6 py-3 text-center text-urgency-foreground">
           <p className="flex items-center justify-center gap-2 font-display text-sm font-bold tracking-[0.12em] uppercase">
             <Zap className="size-4" aria-hidden="true" />
-            Oferta exclusiva de upsell
+            Oferta exclusiva
           </p>
         </div>
 
