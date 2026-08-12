@@ -218,6 +218,10 @@
   animation: btn-pulse 2.5s ease-in-out infinite;
 }
 
+@utility shield-pulse {
+  animation: shield-pulse 2.5s ease-in-out infinite;
+}
+
 @utility glow-arrow {
   box-shadow: 0 0 0 2px var(--color-background), 0 0 18px 4px var(--color-primary);
   animation: glow-arrow 2.4s ease-in-out infinite;
@@ -254,6 +258,16 @@
   50% {
     box-shadow: 0 0 0 12px oklch(0.58 0.16 130 / 0), var(--shadow-cta);
     transform: scale(1.01);
+  }
+}
+
+@keyframes shield-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.98 0.01 95 / 0.12), inset 0 0 0 1px oklch(0.98 0.01 95 / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 16px 3px oklch(0.98 0.01 95 / 0.25), inset 0 0 0 1px oklch(0.98 0.01 95 / 0.35);
   }
 }
 
