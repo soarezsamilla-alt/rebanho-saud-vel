@@ -125,11 +125,11 @@ export function PlansSection() {
 
       <div className="mt-12 grid items-start gap-8 lg:grid-cols-2">
         <article className="rounded-3xl border border-border bg-card p-7 shadow-card-soft">
-          <h3 className="font-display text-2xl font-bold tracking-wide uppercase">Plano Básico</h3>
-          <p className="mt-2 font-display text-lg font-semibold text-primary">
+          <h3 className="text-center font-display text-2xl font-bold tracking-wide uppercase">Plano Básico</h3>
+          <p className="mt-2 text-center font-display text-lg font-semibold text-primary">
             Atlas Visual de Parasitas do Rebanho
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 text-center text-sm text-muted-foreground">
             Para quem deseja começar a identificar os parasitas de forma prática e organizada.
           </p>
 
