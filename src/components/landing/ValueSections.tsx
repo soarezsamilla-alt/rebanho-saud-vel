@@ -74,15 +74,15 @@ const IDEAL_CARDS: ReadonlyArray<FeatureCard> = [
   },
 ];
 
-const PAIN_IMAGES = [
-  "exemplo-verminose",
-  "exemplo-carrapato",
-  "exemplo-mosca-dos-chifres",
-  "exemplo-berne",
-  "exemplo-bicheira",
-  "exemplo-sarna",
-  "exemplo-piolho",
-] as const;
+const PAIN_IMAGES: ReadonlyArray<{ src: string; alt: string }> = [
+  { src: painVerminose, alt: "Bovino magro com sinais de verminose" },
+  { src: painCarrapato, alt: "Infestação de carrapatos no couro do bovino" },
+  { src: painMosca, alt: "Mosca-dos-chifres sobre o dorso do bovino" },
+  { src: painBerne, alt: "Nódulos de berne na pele do bovino" },
+  { src: painBicheira, alt: "Ferida com bicheira sendo examinada por veterinário" },
+  { src: painSarna, alt: "Lesões de sarna com perda de pelo no bovino" },
+  { src: painPiolho, alt: "Piolhos bovinos entre os pelos do animal" },
+];
 
 const DELIVERABLES = [
   "+100 Parasitas do Rebanho Identificados",
@@ -144,13 +144,21 @@ export function PainSection() {
       </p>
 
       <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
-        {PAIN_IMAGES.map((label) => (
-          <ImagePlaceholder
-            key={label}
-            label={label}
-            ratio="aspect-square"
-            className="border-earth-foreground/30 bg-earth-foreground/10 text-earth-foreground"
-          />
+        {PAIN_IMAGES.map((image) => (
+          <figure
+            key={image.src}
+            className="overflow-hidden rounded-xl border border-earth-foreground/30 bg-earth-foreground/10"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              width={816}
+              height={816}
+              loading="lazy"
+              decoding="async"
+              className="aspect-square h-full w-full object-cover"
+            />
+          </figure>
         ))}
       </div>
 
