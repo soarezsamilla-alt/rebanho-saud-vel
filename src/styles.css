@@ -284,6 +284,37 @@
   animation: marquee 26s linear infinite;
 }
 
+@utility toast-in {
+  animation: toast-in 0.5s ease-out forwards;
+}
+
+@utility toast-out {
+  animation: toast-out 0.5s ease-in forwards;
+}
+
+@keyframes toast-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-120%) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes toast-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-120%) scale(0.92);
+  }
+}
+
+
 
 
 
