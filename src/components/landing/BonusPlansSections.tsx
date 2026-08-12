@@ -96,7 +96,7 @@ export function BonusSection() {
                 width={400}
                 height={300}
                 loading="lazy"
-                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+                className="mt-4 w-full rounded-xl bg-muted/40 object-contain aspect-square p-2"
               />
             ) : bonus.image === "bonus-guia-carrapato" ? (
               <img
@@ -105,7 +105,7 @@ export function BonusSection() {
                 width={400}
                 height={300}
                 loading="lazy"
-                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+                className="mt-4 w-full rounded-xl bg-muted/40 object-contain aspect-square p-2"
               />
             ) : bonus.image === "bonus-checklist-inspecao" ? (
               <img
@@ -114,7 +114,7 @@ export function BonusSection() {
                 width={400}
                 height={300}
                 loading="lazy"
-                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+                className="mt-4 w-full rounded-xl bg-muted/40 object-contain aspect-square p-2"
               />
             ) : bonus.image === "bonus-mapa-risco-sazonal" ? (
               <img
@@ -123,7 +123,7 @@ export function BonusSection() {
                 width={400}
                 height={300}
                 loading="lazy"
-                className="mt-4 w-full rounded-xl object-cover aspect-[4/3]"
+                className="mt-4 w-full rounded-xl bg-muted/40 object-contain aspect-square p-2"
               />
             ) : (
               <ImagePlaceholder label={bonus.image} ratio="aspect-[4/3]" className="mt-4" />
