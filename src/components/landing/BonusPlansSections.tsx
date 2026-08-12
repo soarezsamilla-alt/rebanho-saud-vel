@@ -3,6 +3,7 @@ import { Check, Gift, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
 import bonusCalendarioMockup from "@/assets/bonus-calendario-vermifugacao.png.asset.json";
+import bonusCarrapatoMockup from "@/assets/bonus-guia-carrapato.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { UpsellModal } from "./UpsellModal";
