@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
@@ -158,7 +159,14 @@ export function PlansSection() {
             ano inteiro.
           </p>
 
-          <ImagePlaceholder label="mockup-plano-completo" ratio="aspect-[16/10]" className="mt-5" />
+          <img
+            src={heroMockup.url}
+            alt="Mockup do Plano Completo"
+            width={700}
+            height={700}
+            loading="lazy"
+            className="pulse-glow mx-auto mt-5 w-full max-w-sm rounded-2xl"
+          />
 
           <FeatureList items={COMPLETE_FEATURES} />
 
