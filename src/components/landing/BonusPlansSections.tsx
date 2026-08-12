@@ -133,6 +133,15 @@ export function PlansSection() {
             Para quem deseja começar a identificar os parasitas de forma prática e organizada.
           </p>
 
+          <img
+            src={basicMockup.url}
+            alt="Mockup do Plano Básico"
+            width={700}
+            height={700}
+            loading="lazy"
+            className="pulse-glow mx-auto mt-5 w-full max-w-sm rounded-2xl"
+          />
+
           <FeatureList items={BASIC_FEATURES} />
 
           <div className="mt-7 rounded-2xl bg-muted p-5 text-center">
