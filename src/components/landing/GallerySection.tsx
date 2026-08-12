@@ -50,14 +50,6 @@ const PARASITES: ReadonlyArray<{ name: string; detail: string }> = [
   { name: "Ectoparasitas em geral", detail: "Guia comparativo para não confundir sintomas." },
 ];
 
-const CAROUSEL_IMAGES = [
-  "carrossel-parasita-1",
-  "carrossel-parasita-2",
-  "carrossel-fazenda-1",
-  "carrossel-fazenda-2",
-  "carrossel-fazenda-3",
-] as const;
-
 export function GallerySection() {
   return (
     <Section className="bg-background">
@@ -125,20 +117,28 @@ export function GallerySection() {
   );
 }
 
-
 export function SecondaryCarousel() {
+  const duplicated = [...GALLERY_IMAGES, ...GALLERY_IMAGES];
+
   return (
-    <section aria-label="Demonstração do material" className="bg-sand px-4 py-10">
-      <div className="mx-auto flex max-w-6xl snap-x snap-mandatory gap-4 overflow-x-auto pb-2">
-        {CAROUSEL_IMAGES.map((label) => (
-          <ImagePlaceholder
-            key={label}
-            label={label}
-            ratio="aspect-[3/4]"
-            className="w-52 shrink-0 snap-center border-sand-foreground/25 bg-background/70"
-          />
+    <section aria-label="Demonstração do material" className="overflow-hidden bg-sand py-10">
+      <div className="animate-marquee hover:pause flex w-max gap-4">
+        {duplicated.map((image, index) => (
+          <figure
+            key={`${image.url}-${index}`}
+            className="shrink-0 rounded-xl border border-border bg-card p-2 shadow-card-soft"
+          >
+            <img
+              src={image.url}
+              alt={image.alt}
+              loading="lazy"
+              decoding="async"
+              className="h-[240px] w-auto rounded-lg object-contain sm:h-[300px] md:h-[360px]"
+            />
+          </figure>
         ))}
       </div>
     </section>
   );
 }
+
