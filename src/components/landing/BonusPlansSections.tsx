@@ -1,4 +1,4 @@
-import { Check, Zap } from "lucide-react";
+import { Check, ShieldCheck, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
