@@ -17,7 +17,7 @@ export function CtaButton({
     <a
       href={href}
       className={cn(
-        "inline-flex w-full max-w-md items-center justify-center rounded-full font-display font-bold tracking-wide uppercase",
+        "btn-pulse inline-flex w-full max-w-md items-center justify-center rounded-full font-display font-bold tracking-wide uppercase",
         "bg-cta text-cta-foreground shadow-[var(--shadow-cta)] transition-transform duration-200",
         "hover:-translate-y-0.5 hover:brightness-105 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none",
         size === "lg" ? "px-8 py-4 text-lg sm:text-xl" : "px-6 py-3.5 text-base sm:text-lg",
