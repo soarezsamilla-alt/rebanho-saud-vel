@@ -115,13 +115,16 @@ export function UpsellModal({ open, onClose }: { open: boolean; onClose: () => v
               <ArrowRight className="ml-2 size-5" aria-hidden="true" />
             </CtaButton>
 
-            <button
+            <a
+              href="https://pay.wiapy.com/7Z-sSkyg9sSQ"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onClose}
               className="inline-flex items-center justify-center gap-2 rounded-full py-3 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
             >
               <X className="size-4" aria-hidden="true" />
               Não, quero apenas o Plano Básico
-            </button>
+            </a>
           </div>
         </div>
       </DialogContent>
