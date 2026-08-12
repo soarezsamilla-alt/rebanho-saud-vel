@@ -97,12 +97,19 @@ export function BonusSection() {
 function FeatureList({ items }: { items: ReadonlyArray<string> }) {
   return (
     <ul className="mt-6 space-y-2.5 text-left">
-      {items.map((item) => (
-        <li key={item} className="flex items-start gap-2.5 text-sm sm:text-base">
-          <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-          <span>{item}</span>
-        </li>
-      ))}
+      {items.map((item) => {
+        const isBonus = item.startsWith("Bônus");
+        return (
+          <li key={item} className="flex items-start gap-2.5 text-sm sm:text-base">
+            {isBonus ? (
+              <Gift className="mt-0.5 size-4 shrink-0 text-urgency" aria-hidden="true" />
+            ) : (
+              <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+            )}
+            <span>{item}</span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
