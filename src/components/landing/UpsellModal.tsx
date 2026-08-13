@@ -109,12 +109,11 @@ export function UpsellModal({ open, onClose }: { open: boolean; onClose: () => v
               href="https://pay.wiapy.com/dsLjibDs63pX"
               target="_blank"
               rel="noopener noreferrer"
-              size="lg"
-              className="bg-urgency text-urgency-foreground"
+              className="bg-urgency text-urgency-foreground text-sm sm:text-base"
               onClick={onClose}
             >
               Sim, quero o Plano Completo por R$ 19,90
-              <ArrowRight className="ml-2 size-5" aria-hidden="true" />
+              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
             </CtaButton>
 
             <a
