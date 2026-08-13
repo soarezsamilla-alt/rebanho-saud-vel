@@ -13,37 +13,37 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import guaranteeSeal from "@/assets/selo-garantia.png.asset.json";
-import depoimento01 from "@/assets/depoimento-01.png.asset.json";
-import depoimento02 from "@/assets/depoimento-02.png.asset.json";
-import depoimento03 from "@/assets/depoimento-03.png.asset.json";
-import depoimento04 from "@/assets/depoimento-04.png.asset.json";
-import depoimento05 from "@/assets/depoimento-05.png.asset.json";
-import depoimento06 from "@/assets/depoimento-06.png.asset.json";
+import guaranteeSeal from "@/assets/selo-garantia.png";
+import depoimento01 from "@/assets/depoimento-01.png";
+import depoimento02 from "@/assets/depoimento-02.png";
+import depoimento03 from "@/assets/depoimento-03.png";
+import depoimento04 from "@/assets/depoimento-04.png";
+import depoimento05 from "@/assets/depoimento-05.png";
+import depoimento06 from "@/assets/depoimento-06.png";
 
 const TESTIMONIALS: ReadonlyArray<{ url: string; alt: string }> = [
   {
-    url: depoimento01.url,
+    url: depoimento01,
     alt: "Depoimento 1 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    url: depoimento02.url,
+    url: depoimento02,
     alt: "Depoimento 2 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    url: depoimento03.url,
+    url: depoimento03,
     alt: "Depoimento 3 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    url: depoimento04.url,
+    url: depoimento04,
     alt: "Depoimento 4 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    url: depoimento05.url,
+    url: depoimento05,
     alt: "Depoimento 5 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
   {
-    url: depoimento06.url,
+    url: depoimento06,
     alt: "Depoimento 6 de cliente do Atlas Visual de Parasitas do Rebanho",
   },
 ];
@@ -159,7 +159,7 @@ export function GuaranteeSection() {
     <Section className="bg-earth-gradient text-earth-foreground">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <img
-          src={guaranteeSeal.url}
+          src={guaranteeSeal}
           alt="Selo de 7 dias de garantia incondicional"
           width={320}
           height={320}

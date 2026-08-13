@@ -1,5 +1,5 @@
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
-import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
+import heroMockup from "@/assets/hero-mockup-new.png";
 import painVerminose from "@/assets/pain/verminose.jpg";
 import painCarrapato from "@/assets/pain/carrapato.jpg";
 import painMosca from "@/assets/pain/mosca.jpg";
@@ -193,7 +193,7 @@ export function DeliverablesSection() {
 
       <div className="mt-10 grid items-center gap-10 lg:grid-cols-2">
         <img
-          src={heroMockup.url}
+          src={heroMockup}
           alt="Mockup principal do Atlas Visual de Parasitas do Rebanho — tudo o que você vai receber"
           width={700}
           height={700}
