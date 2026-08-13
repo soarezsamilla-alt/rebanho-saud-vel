@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Clock, ShieldCheck } from "lucide-react";
 import { CtaButton } from "./CtaButton";
-import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
+import heroMockup from "@/assets/hero-mockup-new.png";
 
 
 function getTomorrowDate(): string {
@@ -53,7 +53,7 @@ export function Hero() {
         </p>
 
         <img
-          src={heroMockup.url}
+          src={heroMockup}
           alt="Mockup principal do Atlas Visual de Parasitas do Rebanho — capa do material"
           width={700}
           height={700}

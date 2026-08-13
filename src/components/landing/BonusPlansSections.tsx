@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Check, Gift, ShieldCheck, Zap } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup-new.png.asset.json";
-import basicMockup from "@/assets/mockup-plano-basico.png.asset.json";
-import bonusCalendarioMockup from "@/assets/bonus-calendario-vermifugacao.png.asset.json";
-import bonusCarrapatoMockup from "@/assets/bonus-guia-carrapato.png.asset.json";
-import bonusChecklistMockup from "@/assets/bonus-checklist-inspecao.png.asset.json";
-import bonusMapaMockup from "@/assets/bonus-mapa-risco-sazonal.png.asset.json";
+import heroMockup from "@/assets/hero-mockup-new.png";
+import basicMockup from "@/assets/mockup-plano-basico.png";
+import bonusCalendarioMockup from "@/assets/bonus-calendario-vermifugacao.png";
+import bonusCarrapatoMockup from "@/assets/bonus-guia-carrapato.png";
+import bonusChecklistMockup from "@/assets/bonus-checklist-inspecao.png";
+import bonusMapaMockup from "@/assets/bonus-mapa-risco-sazonal.png";
 import { CtaButton, Section, SectionTitle } from "./CtaButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { UpsellModal } from "./UpsellModal";
@@ -91,7 +91,7 @@ export function BonusSection() {
             <h3 className="mt-1 text-lg font-bold text-primary">{bonus.title}</h3>
             {bonus.image === "bonus-calendario-vermifugacao" ? (
               <img
-                src={bonusCalendarioMockup.url}
+                src={bonusCalendarioMockup}
                 alt={bonus.title}
                 width={400}
                 height={300}
@@ -100,7 +100,7 @@ export function BonusSection() {
               />
             ) : bonus.image === "bonus-guia-carrapato" ? (
               <img
-                src={bonusCarrapatoMockup.url}
+                src={bonusCarrapatoMockup}
                 alt={bonus.title}
                 width={400}
                 height={300}
@@ -109,7 +109,7 @@ export function BonusSection() {
               />
             ) : bonus.image === "bonus-checklist-inspecao" ? (
               <img
-                src={bonusChecklistMockup.url}
+                src={bonusChecklistMockup}
                 alt={bonus.title}
                 width={400}
                 height={300}
@@ -118,7 +118,7 @@ export function BonusSection() {
               />
             ) : bonus.image === "bonus-mapa-risco-sazonal" ? (
               <img
-                src={bonusMapaMockup.url}
+                src={bonusMapaMockup}
                 alt={bonus.title}
                 width={400}
                 height={300}
@@ -181,7 +181,7 @@ export function PlansSection() {
           </p>
 
           <img
-            src={basicMockup.url}
+            src={basicMockup}
             alt="Mockup do Plano Básico"
             width={700}
             height={700}
@@ -227,7 +227,7 @@ export function PlansSection() {
           </p>
 
           <img
-            src={heroMockup.url}
+            src={heroMockup}
             alt="Mockup do Plano Completo"
             width={700}
             height={700}
