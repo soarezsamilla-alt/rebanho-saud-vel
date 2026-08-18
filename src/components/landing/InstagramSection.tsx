@@ -74,7 +74,7 @@ export function InstagramSection() {
         </dl>
 
         <div className="mt-6 grid grid-cols-3 gap-3">
-          {POSTS.map((post) => (
+          {POSTS.map((post, index) => (
             <figure
               key={post.src}
               className="overflow-hidden rounded-xl border border-earth-foreground/20 bg-earth-foreground/10"
@@ -84,7 +84,11 @@ export function InstagramSection() {
                 alt={post.alt}
                 loading="lazy"
                 decoding="async"
-                className="aspect-[4/5] w-full object-cover"
+                className={
+                  index === 0
+                    ? "h-auto w-full object-contain"
+                    : "aspect-[4/5] w-full object-cover"
+                }
               />
               <figcaption className="px-2 py-2 text-[0.6rem] leading-snug opacity-80 sm:text-xs">
                 {post.caption}
