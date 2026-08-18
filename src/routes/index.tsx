@@ -16,6 +16,7 @@ import {
   FaqSection,
   SiteFooter,
 } from "@/components/landing/ProofSections";
+import { InstagramSection } from "@/components/landing/InstagramSection";
 import { SocialProofPopup } from "@/components/landing/SocialProofPopup";
 
 const TITLE = "Atlas Visual de Parasitas do Rebanho | Método IVR™";
@@ -50,6 +51,7 @@ function Index() {
       <BonusSection />
       <PlansSection />
       <TestimonialsSection />
+      <InstagramSection />
       <GuaranteeSection />
       <StepsSection />
       <FaqSection />
