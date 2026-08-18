@@ -1,7 +1,7 @@
 import { Instagram } from "lucide-react";
 import { Section } from "./CtaButton";
 import a02 from "@/assets/instagram-post-1.jpeg";
-import a05 from "@/assets/amostras/amostra-05.jpg";
+import a05 from "@/assets/instagram-post-2.jpg";
 import a08 from "@/assets/amostras/amostra-08.jpg";
 import profileImg from "@/assets/instagram-profile.jpeg";
 
@@ -17,7 +17,7 @@ const STATS: ReadonlyArray<{ value: string; label: string }> = [
 
 const POSTS: ReadonlyArray<{ src: string; alt: string; caption: string }> = [
   { src: a02, alt: "Post sobre como montar um galinheiro do zero", caption: "Como montar um galinheiro do zero" },
-  { src: a05, alt: "Post sobre sinais de verminose no bovino", caption: "Sinais de verminose que passam batido" },
+  { src: a05, alt: "Post comparando uma chácara sem planejamento e outra planejada", caption: "A diferença é só planejamento" },
   { src: a08, alt: "Post sobre manejo sanitário do rebanho", caption: "Manejo sanitário sem desperdício" },
 ];
 
@@ -85,7 +85,7 @@ export function InstagramSection() {
                 loading="lazy"
                 decoding="async"
                 className={
-                  index === 0
+                  index <= 1
                     ? "h-auto w-full object-contain"
                     : "aspect-[4/5] w-full object-cover"
                 }
