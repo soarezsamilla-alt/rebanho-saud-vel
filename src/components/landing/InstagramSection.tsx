@@ -86,9 +86,6 @@ export function InstagramSection() {
                 decoding="async"
                 className="h-auto w-full object-contain"
               />
-              <figcaption className="px-2 py-2 text-[0.6rem] leading-snug opacity-80 sm:text-xs">
-                {post.caption}
-              </figcaption>
             </figure>
           ))}
         </div>
