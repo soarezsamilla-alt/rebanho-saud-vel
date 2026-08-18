@@ -1,6 +1,6 @@
 import { Instagram } from "lucide-react";
 import { Section } from "./CtaButton";
-import a02 from "@/assets/amostras/amostra-02.jpg";
+import a02 from "@/assets/instagram-post-1.jpeg";
 import a05 from "@/assets/amostras/amostra-05.jpg";
 import a08 from "@/assets/amostras/amostra-08.jpg";
 import profileImg from "@/assets/instagram-profile.jpeg";
