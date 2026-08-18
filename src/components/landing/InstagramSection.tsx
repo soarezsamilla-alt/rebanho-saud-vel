@@ -3,6 +3,7 @@ import { Section } from "./CtaButton";
 import a02 from "@/assets/amostras/amostra-02.jpg";
 import a05 from "@/assets/amostras/amostra-05.jpg";
 import a08 from "@/assets/amostras/amostra-08.jpg";
+import profileImg from "@/assets/instagram-profile.jpeg";
 
 /** Instagram handle used across the section. */
 const HANDLE = "@atlasdoparasita";
@@ -41,8 +42,14 @@ export function InstagramSection() {
 
       <div className="mx-auto mt-10 w-full max-w-3xl rounded-2xl border border-earth-foreground/20 bg-earth-foreground/5 p-6 sm:p-8">
         <div className="flex flex-col items-center text-center">
-          <span className="flex size-16 items-center justify-center rounded-full border-2 border-cta-lime bg-earth-foreground/10">
-            <Instagram aria-hidden="true" className="size-7" />
+          <span className="flex size-16 items-center justify-center overflow-hidden rounded-full border-2 border-cta-lime bg-earth-foreground/10">
+            <img
+              src={profileImg}
+              alt="Foto de perfil do Atlas Visual de Parasitas no Instagram"
+              loading="lazy"
+              decoding="async"
+              className="size-full object-cover"
+            />
           </span>
           <h3 className="mt-4 text-xl font-bold">Atlas Visual de Parasitas</h3>
           <p className="text-sm opacity-70">{HANDLE}</p>
