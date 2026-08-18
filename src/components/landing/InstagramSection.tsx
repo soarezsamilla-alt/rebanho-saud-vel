@@ -3,6 +3,7 @@ import { Section } from "./CtaButton";
 import a02 from "@/assets/amostras/amostra-02.jpg";
 import a05 from "@/assets/amostras/amostra-05.jpg";
 import a08 from "@/assets/amostras/amostra-08.jpg";
+import profileImg from "@/assets/instagram-profile.jpeg";
 
 /** Instagram handle used across the section. */
 const HANDLE = "@atlasdoparasita";
