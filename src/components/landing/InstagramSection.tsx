@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react";
 import { Section } from "./CtaButton";
 import a02 from "@/assets/instagram-post-1.jpeg";
 import a05 from "@/assets/instagram-post-2.jpg";
-import a08 from "@/assets/amostras/amostra-08.jpg";
+import a08 from "@/assets/instagram-post-3.jpeg";
 import profileImg from "@/assets/instagram-profile.jpeg";
 
 /** Instagram handle used across the section. */
@@ -18,7 +18,7 @@ const STATS: ReadonlyArray<{ value: string; label: string }> = [
 const POSTS: ReadonlyArray<{ src: string; alt: string; caption: string }> = [
   { src: a02, alt: "Post sobre como montar um galinheiro do zero", caption: "Como montar um galinheiro do zero" },
   { src: a05, alt: "Post comparando uma chácara sem planejamento e outra planejada", caption: "A diferença é só planejamento" },
-  { src: a08, alt: "Post sobre manejo sanitário do rebanho", caption: "Manejo sanitário sem desperdício" },
+  { src: a08, alt: "Post sobre como transformar 5.000 m² em uma chácara planejada e lucrativa", caption: "Como transformar 5.000 m² em chácara lucrativa" },
 ];
 
 export function InstagramSection() {
@@ -84,11 +84,7 @@ export function InstagramSection() {
                 alt={post.alt}
                 loading="lazy"
                 decoding="async"
-                className={
-                  index <= 1
-                    ? "h-auto w-full object-contain"
-                    : "aspect-[4/5] w-full object-cover"
-                }
+                className="h-auto w-full object-contain"
               />
               <figcaption className="px-2 py-2 text-[0.6rem] leading-snug opacity-80 sm:text-xs">
                 {post.caption}
