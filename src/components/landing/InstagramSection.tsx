@@ -74,7 +74,7 @@ export function InstagramSection() {
         </dl>
 
         <div className="mt-6 grid grid-cols-3 gap-3">
-          {POSTS.map((post, index) => (
+          {POSTS.map((post) => (
             <figure
               key={post.src}
               className="overflow-hidden rounded-xl border border-earth-foreground/20 bg-earth-foreground/10"
