@@ -49,8 +49,8 @@ function Index() {
       <IdealForSection />
       <DeliverablesSection />
       <BonusSection />
-      <PlansSection />
       <TestimonialsSection />
+      <PlansSection />
       <InstagramSection />
       <GuaranteeSection />
       <StepsSection />
