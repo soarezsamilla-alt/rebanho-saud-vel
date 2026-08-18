@@ -7,7 +7,7 @@ import profileImg from "@/assets/instagram-profile.jpeg";
 
 /** Instagram handle used across the section. */
 const HANDLE = "@atlasdoparasita";
-const PROFILE_URL = "https://instagram.com/atlasdoparasita";
+const PROFILE_URL = "https://www.instagram.com/ruralplanner.oficial?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=";
 
 const STATS: ReadonlyArray<{ value: string; label: string }> = [
   { value: "+100", label: "Parasitas" },
