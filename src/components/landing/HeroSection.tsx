@@ -62,12 +62,6 @@ export function Hero() {
           decoding="async"
         />
 
-        <p className="mt-8 max-w-2xl text-sm text-pretty opacity-85 sm:text-base">
-          Utilize o Método IVR™ (Identificação Visual Rápida) e tenha acesso a uma biblioteca visual
-          prática para identificar rapidamente o parasita responsável pela perda de peso, queda de
-          produção ou queda de imunidade do seu rebanho.
-        </p>
-
         <div className="mt-8 flex w-full justify-center">
           <CtaButton size="lg">QUERO MEU PROJETO POR R$ 9,90</CtaButton>
         </div>
