@@ -16,7 +16,7 @@ const STATS: ReadonlyArray<{ value: string; label: string }> = [
 ];
 
 const POSTS: ReadonlyArray<{ src: string; alt: string; caption: string }> = [
-  { src: a02, alt: "Post sobre identificação de carrapato no rebanho", caption: "Como identificar carrapato no couro" },
+  { src: a02, alt: "Post sobre como montar um galinheiro do zero", caption: "Como montar um galinheiro do zero" },
   { src: a05, alt: "Post sobre sinais de verminose no bovino", caption: "Sinais de verminose que passam batido" },
   { src: a08, alt: "Post sobre manejo sanitário do rebanho", caption: "Manejo sanitário sem desperdício" },
 ];
