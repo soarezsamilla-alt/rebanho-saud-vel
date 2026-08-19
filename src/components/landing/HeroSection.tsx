@@ -44,7 +44,7 @@ export function Hero() {
         </span>
 
         <h1 className="mt-6 text-4xl leading-[1.05] font-bold text-balance uppercase sm:text-5xl lg:text-6xl">
-          Atlas Visual de Parasitas do Rebanho
+          +100 Parasitas do Rebanho Identificados em Segundos, Direto no Curral
         </h1>
 
         <p className="mt-5 max-w-2xl text-base text-pretty opacity-90 sm:text-lg">
