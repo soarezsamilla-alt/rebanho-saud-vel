@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Clock, ShieldCheck } from "lucide-react";
+import { Clock, ShieldCheck, Mail, MessageCircle } from "lucide-react";
 import { CtaButton } from "./CtaButton";
 import heroMockup from "@/assets/hero-mockup-new.png";
 
@@ -70,6 +70,16 @@ export function Hero() {
           Você recebe acesso imediato após a compra para consultar pelo celular, tablet ou
           computador, direto na fazenda.
         </p>
+        <div className="mt-3 flex items-center justify-center gap-4 text-xs font-semibold sm:text-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-foreground/10 px-3 py-1.5">
+            <MessageCircle className="size-4 shrink-0 text-green-500" aria-hidden="true" />
+            Receber no WhatsApp
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-foreground/10 px-3 py-1.5">
+            <Mail className="size-4 shrink-0" aria-hidden="true" />
+            Receber no E-mail
+          </span>
+        </div>
       </div>
     </header>
   );
