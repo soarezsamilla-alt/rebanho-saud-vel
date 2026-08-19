@@ -48,8 +48,8 @@ export function Hero() {
         </h1>
 
         <p className="mt-5 max-w-2xl text-base text-pretty opacity-90 sm:text-lg">
-          Tenha em mãos +100 Parasitas do Rebanho organizados por sintoma para identificar em
-          segundos, direto no curral.
+          Identifique em segundos qual parasita está por trás da perda de peso do seu gado, receba
+          +100 sinais organizados por sintoma, prontos pra consulta.
         </p>
 
         <img
